@@ -1,3 +1,10 @@
+import React from 'react';
+
 export default function Home() {
-  return <h1>Coffee Shop Frontend Splash Page</h1>;
+  return (
+    <div className="coffeeShop">
+      <h1>Cyber Cafe Coffee House</h1>
+      <button className="btn btn-primary">Let's Shop</button>
+    </div>
+  );
 }

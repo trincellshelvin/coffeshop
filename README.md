@@ -16,14 +16,14 @@ Live link: https://coffeshop-iota.vercel.app/
 
 ## Components
 
-- [ ] Navbar
-- [ ] Footer
-- [ ] Button
-- [ ] Loader
-- [ ] Toast
-- [ ] ProductCard
-- [ ] CartItem
-- [ ] CartSummary
+- [x] Navbar
+- [x] Footer
+- [x] Button
+- [x] Loader
+- [x] Toast
+- [x] ProductCard
+- [x] CartItem
+- [x] CartSummary
 
 ## Features
 - [ ] Tailwind CSS with DaisyUI integration.
@@ -38,6 +38,7 @@ If you would like to try this project out or contribute, follow these steps:
 3. Start the app with `npm run dev`.
 4. Open Storybook with `npm run storybook`.
 
+
 ## Contributing
 If you would like to contribute to this project, please follow these steps:
 
@@ -50,7 +51,8 @@ If you would like to contribute to this project, please follow these steps:
 
 ## Screenshots
 
-Add screenshots of the app here.
+![Completed Setup](https://res.cloudinary.com/dgls7u3iq/image/upload/v1736220495/CoffeeShopBackendTestsScreenshots/CoffeeShopFrontEndCapstone/Screenshot_2025-01-06_185702_lrpzvz.png)
+![StoryBook Interface](https://res.cloudinary.com/dgls7u3iq/image/upload/v1736220495/CoffeeShopBackendTestsScreenshots/CoffeeShopFrontEndCapstone/Screenshot_2025-01-06_212518_qgbycz.png)
 
 ## Attribution
 
