@@ -1,0 +1,9 @@
+/* styles/navbar.css */
+.navbar {
+    background-color: #6b4f4f; /* Milk chocolate brown hue */
+    color: white; /* White font */
+    padding: 1rem; /* Add some padding for better visualization */
+    display: flex; /* Optional: to ensure it styles well with content */
+    justify-content: space-between; /* Optional: for content alignment */
+    align-items: center; /* Optional: for vertical alignment */
+}

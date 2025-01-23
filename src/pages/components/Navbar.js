@@ -1,9 +1,8 @@
-// components/Navbar.js
-import PropTypes from 'prop-types';
-export default function Navbar({ title }) {
-    return <div className="navbar">Navbar Component {title}</div>;
+// In Navbar.js
+export default function Navbar() {
+    return (
+        <div className="navbar">
+            {/* Your navbar content */}
+        </div>
+    );
 }
-Navbar.propTypes = {
-    // Add prop-types here
-    title: PropTypes.string.isRequired,
-};

@@ -11,3 +11,9 @@ export const Default = {
     label: "Let's Shop"
   }
 };
+
+export const BuyNow = {
+  args: {
+    label: "Buy Now"
+  }
+};
