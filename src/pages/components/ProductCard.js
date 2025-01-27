@@ -1,9 +1,31 @@
-// components/ProductCard.js
 import PropTypes from 'prop-types';
-export default function ProductCard({ title }) {
-    return <div className="productcard">ProductCard Component {title}</div>;
+import Button from '../components/Button'; // Ensure the correct path
+
+export default function ProductCard({ product }) {
+    if (!product) {
+        return <div>Product not found!</div>; // Handle undefined `product`
+    }
+
+    return (
+        <div className="card">
+            {product.image ? (
+                <img src={product.image} alt={product.name} className="product-image" />
+            ) : (
+                <div className="placeholder-image">Image not available</div>
+            )}
+            <h3 className="product-name">{product.name}</h3>
+            <p className="product-description">{product.description}</p>
+            <p className="product-price">${product.price}</p>
+            <Button label="Add to Cart" handleAddtoCart={() => console.log('Order now annotated!')} />
+        </div>
+    );
 }
+
 ProductCard.propTypes = {
-    // Add prop-types here
-    title: PropTypes.string.isRequired,
+    product: PropTypes.shape({
+        image: PropTypes.string,
+        name: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
+    }).isRequired,
 };

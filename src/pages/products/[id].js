@@ -1,12 +1,21 @@
+import React from 'react';
 import { useRouter } from 'next/router';
+import products from '../../mocks/products.json';
+import ProductCard from '../components/ProductCard'; // Correct import path and name
 
 export default function ProductPage() {
-    // For pages with dynamic routes, you can use the useRouter hook to get the route params
     const router = useRouter();
-    const { id } = router.query; // Get 'id' from the route params
+    const { id } = router.query;
+    const product = products[id] || {};
+
+    function handleAddToCart() {
+        console.log('Add to Cart clicked!'); // Log message for event handler
+        alert('Added to cart!');
+    }
+
     return (
         <div>
-            <h1>Product Page for product &#35; {id}</h1>
+            <ProductCard product={product} handleAddToCart={handleAddToCart} /> {/* Pass props correctly */}
         </div>
     );
 }
