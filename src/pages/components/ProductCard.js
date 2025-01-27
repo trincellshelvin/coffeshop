@@ -1,31 +1,63 @@
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Button from '../components/Button'; // Ensure the correct path
+import Button from './Button';
+import { FaTrash } from 'react-icons/fa';
 
-export default function ProductCard({ product }) {
-    if (!product) {
-        return <div>Product not found!</div>; // Handle undefined `product`
-    }
+const ProductCard = ({ product, handleAddToCart, handleRemoveFromCart }) => {
+    const [quantity, setQuantity] = useState(1);
+
+    const adjustQuantity = (change) => {
+        const newQuantity = quantity + change;
+        if (newQuantity >= 1 && newQuantity <= product.stock) {
+            setQuantity(newQuantity);
+        } else if (newQuantity === 0) {
+            handleRemoveFromCart(product._id);
+        }
+    };
+
+    const handleRemove = () => {
+        handleRemoveFromCart(product._id);
+    };
 
     return (
         <div className="card">
-            {product.image ? (
-                <img src={product.image} alt={product.name} className="product-image" />
-            ) : (
-                <div className="placeholder-image">Image not available</div>
-            )}
-            <h3 className="product-name">{product.name}</h3>
-            <p className="product-description">{product.description}</p>
-            <p className="product-price">${product.price}</p>
-            <Button label="Add to Cart" handleAddtoCart={() => console.log('Order now annotated!')} />
+            <img src={product.imageUrl} alt={product.name} className="card-img-top" />
+            <div className="card-body text-center">
+                <h5 className="card-title">{product.name}</h5>
+                <p className="card-text">{product.description}</p>
+                <p className="card-text">${product.price ? product.price.toFixed(2) : 'N/A'}</p>
+                <div className="input-group mb-3">
+                    {quantity > 1 ? (
+                        <>
+                            <Button label="-" handleClick={() => adjustQuantity(-1)} />
+                            <span className="input-group-text">{quantity}</span>
+                            <Button label="+" handleClick={() => adjustQuantity(1)} />
+                        </>
+                    ) : (
+                        <>
+                            <Button label={<FaTrash />} handleClick={handleRemove} />
+                            <span className="input-group-text">{quantity}</span>
+                            <Button label="+" handleClick={() => adjustQuantity(1)} />
+                        </>
+                    )}
+                </div>
+                <Button label="Add to Cart" handleClick={() => handleAddToCart(product, quantity)} />
+            </div>
         </div>
     );
-}
+};
 
 ProductCard.propTypes = {
     product: PropTypes.shape({
-        image: PropTypes.string,
         name: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
+        imageUrl: PropTypes.string.isRequired,
+        stock: PropTypes.number.isRequired,
+        _id: PropTypes.number.isRequired,
     }).isRequired,
+    handleAddToCart: PropTypes.func.isRequired,
+    handleRemoveFromCart: PropTypes.func.isRequired,
 };
+
+export default ProductCard;

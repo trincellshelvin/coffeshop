@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Button from './components/Button'; 
 import Footer from './components/Footer'; 
-import CheckoutFormHeader from './components/CheckOutFormHeader'; // Ensure correct path
+import PageHeader from './components/PageHeader'; // Ensure correct path
+import Navbar from './components/Navbar';
 
 const CheckoutForm = ({ handleBuyNow }) => {
     const [name, setName] = useState('');
@@ -11,12 +12,13 @@ const CheckoutForm = ({ handleBuyNow }) => {
 
     return (
         <div className="checkout-form-container">
-            <CheckoutFormHeader
+            <Navbar />
+            <PageHeader
                 logo="/steampunkcybercafelogo.jpg"
                 businessName="Steam Punk Cyber Cafe"
-                checkoutText="Checkout"
             />
             <form className="form flex flex-col items-center p-5">
+                <h2 className='p-5 font-medium'>Checkout</h2>
                 <input
                     type="text"
                     placeholder="Name"

@@ -53,6 +53,13 @@ If you would like to contribute to this project, please follow these steps:
 
 ![Completed Setup](https://res.cloudinary.com/dgls7u3iq/image/upload/v1736220495/CoffeeShopBackendTestsScreenshots/CoffeeShopFrontEndCapstone/Screenshot_2025-01-06_185702_lrpzvz.png)
 ![StoryBook Interface](https://res.cloudinary.com/dgls7u3iq/image/upload/v1736220495/CoffeeShopBackendTestsScreenshots/CoffeeShopFrontEndCapstone/Screenshot_2025-01-06_212518_qgbycz.png)
+![HomePage](https://res.cloudinary.com/dgls7u3iq/video/upload/v1738021507/CoffeeShopFrontEndTestScreenShots/Screen_Recording_2025-01-27_174434_y9amao.mp4)
+![ShoppingCart](https://res.cloudinary.com/dgls7u3iq/video/upload/v1738021654/CoffeeShopFrontEndTestScreenShots/Screen_Recording_2025-01-27_174712_ghb1tk.mp4)
+![Signup](https://res.cloudinary.com/dgls7u3iq/image/upload/v1738021966/CoffeeShopFrontEndTestScreenShots/Screenshot_2025-01-27_175221_omqthv.png)
+![Login](https://res.cloudinary.com/dgls7u3iq/video/upload/v1738021895/CoffeeShopFrontEndTestScreenShots/Screen_Recording_2025-01-27_175110_c1shta.mp4)
+![ProductPage]()
+![Checkout](https://res.cloudinary.com/dgls7u3iq/image/upload/v1738021820/CoffeeShopFrontEndTestScreenShots/Screenshot_2025-01-27_174956_pzaeka.png)
+
 
 ## Attribution
 

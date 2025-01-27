@@ -1,0 +1,17 @@
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    /* Adjust gap as needed */
+    padding: 20px;
+    /* Adjust padding as needed */
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    /* Example styling */
+    padding: 20px;
+    /* Example styling */
+    border-radius: 10px;
+    /* Example styling */
+}
