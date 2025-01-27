@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const HeroSection = () => {
+const HeroSection = () => {
     return (
         <section className="hero relative flex items-center justify-center min-h-screen">
             <video src="/fallingcoffeebeans.mp4" loop autoPlay muted className="hero-video absolute w-full h-full object-cover top-0 left-0"></video>
@@ -17,3 +17,5 @@ export const HeroSection = () => {
         </section>
     );
 };
+
+export default HeroSection;

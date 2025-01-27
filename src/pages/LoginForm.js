@@ -1,14 +1,18 @@
-// src/components/LoginForm.jsx
+import React from 'react';
 import PropTypes from 'prop-types';
-import Button from '@/components/Button';
+import Button from './components/Button';
+import HeroSection from './components/HeroSection';
 
 export default function LoginForm({ Login, handleLogin }) {
     return (
-        <form className="form">
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <Button label={Login} handleClick={handleLogin} />
-        </form>
+        <div className="relative min-h-screen">
+            <HeroSection />
+            <form className="form relative z-10 flex flex-col items-center">
+                <input type="email" placeholder="Email" className="mb-4 px-4 py-2 rounded" />
+                <input type="password" placeholder="Password" className="mb-4 px-4 py-2 rounded" />
+                <Button label={Login} handleClick={handleLogin} />
+            </form>
+        </div>
     );
 }
 

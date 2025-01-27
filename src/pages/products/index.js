@@ -1,7 +1,16 @@
-export default function ProductsPage() {
+import React from 'react';
+import ProductCard from '../../components/ProductCard'; // Adjust path accordingly
+import products from '../../mocks/products.json'; // Adjust path accordingly
+import '../../styles/products.css'; // Make sure this path is correct
+
+const ProductsPage = () => {
     return (
-        <div>
-            <h1>Products Page</h1>
+        <div className="products-grid">
+            {products.map((product) => (
+                <ProductCard key={product._id} product={product} /> // Use key prop
+            ))}
         </div>
     );
-}
+};
+
+export default ProductsPage;

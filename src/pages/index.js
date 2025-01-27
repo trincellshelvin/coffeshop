@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import { HeroSection } from './components/HeroSection';
+import  HeroSection from './components/HeroSection';
 import Button from './components/Button';
 
 const CallToActionSection = ({ handleClick }) => (
