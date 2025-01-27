@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add this to your global CSS file */
+.text-chocolate-brown {
+    color: #D2691E;
+    /* RGB for chocolate brown */
+}

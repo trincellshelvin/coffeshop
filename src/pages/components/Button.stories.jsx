@@ -1,19 +1,16 @@
-import Button from './Button';
+import React from 'react';
+import Button from './Button'; // Or adjust based on your file structure
 
-const meta = {
+export default {
+  title: 'Components/Button',
   component: Button,
 };
 
-export default meta;
+const Template = (args) => <Button {...args} />;
 
-export const Default = {
-  args: {
-    label: "Let's Shop"
-  }
+export const OrderNow = Template.bind({});
+OrderNow.args = {
+  label: 'Order Now',
+  handleClick: () => alert('Button clicked!'), // Provide the handleClick function
 };
 
-export const BuyNow = {
-  args: {
-    label: "Buy Now"
-  }
-};
