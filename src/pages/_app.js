@@ -1,4 +1,5 @@
-import '../styles/globals.css'; // Global CSS should be imported here
+import '../styles/globals.css'; 
+import '../styles/cart.css';
 import 'tailwindcss/tailwind.css'; // Tailwind CSS import
 
 
