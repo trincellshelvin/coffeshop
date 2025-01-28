@@ -1,13 +1,13 @@
 import React from 'react';
-import PageHeader from './components/PageHeader';
-import CartItem from './components/CartItem'; 
-import products from '../mocks/cart.json'; 
-import Button from './components/Button'; 
-import Navbar from './components/Navbar'; 
+import PageHeader from './components/PageHeader'; // Ensure correct path
+import CartItem from './components/CartItem'; // Ensure correct path
+import products from '../mocks/cart.json'; // Ensure correct path
+import Button from './components/Button'; // Ensure correct path
+import Navbar from './components/Navbar'; // Ensure correct path
 
 const CartPage = () => {
-    function handleRemoveFromCart() {
-        console.log('Remove from Cart clicked!');
+    function handleRemoveFromCart(productId) {
+        console.log('Remove from Cart clicked!', productId);
     }
 
     function handleCheckout() {
@@ -19,7 +19,7 @@ const CartPage = () => {
             <Navbar />
             <PageHeader pageTitle="Shopping Cart" />
             <div className="cart-items">
-                {Array.isArray(products) && products.map((product) => (
+                {products.map((product) => (
                     <CartItem key={product._id} product={product} handleRemove={handleRemoveFromCart} />
                 ))}
             </div>

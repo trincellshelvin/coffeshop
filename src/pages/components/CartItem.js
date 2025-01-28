@@ -6,14 +6,14 @@ const CartItem = ({ product, handleRemove }) => {
     if (!product) return null; // Check if product is defined
 
     return (
-        <div className="cart-item">
-            <img src={product.image} alt={product.name} className="product-image" />
-            <div className="cart-item-details">
-                <h3>{product.name}</h3>
-                <p>{product.description}</p>
-                <p>${product.price}</p>
-                <p>Quantity: {product.quantity}</p>
-                <Button label="Remove from Cart" handleClick={handleRemove} />
+        <div className="cart-item flex items-center border-b py-4">
+            <img src={product.imageUrl} alt={product.name} className="w-16 h-16 object-cover mr-4" />
+            <div className="cart-item-details flex-1">
+                <h3 className="text-lg font-semibold">{product.name}</h3>
+                <p className="text-gray-600">{product.description}</p>
+                <p className="text-gray-600">${product.price}</p>
+                <p className="text-gray-600">Quantity: {product.quantity}</p>
+                <Button label="Remove from Cart" handleClick={() => handleRemove(product._id)} />
             </div>
         </div>
     );
@@ -21,11 +21,12 @@ const CartItem = ({ product, handleRemove }) => {
 
 CartItem.propTypes = {
     product: PropTypes.shape({
-        image: PropTypes.string.isRequired,
+        imageUrl: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
         quantity: PropTypes.number.isRequired,
+        _id: PropTypes.number.isRequired,
     }).isRequired,
     handleRemove: PropTypes.func.isRequired,
 };
