@@ -26,8 +26,8 @@ Live link: https://coffeshop-iota.vercel.app/
 - [x] CartSummary
 
 ## Features
-- [ ] Tailwind CSS with DaisyUI integration.
-- [ ] Storybook for component development.
+- [x] Tailwind CSS with DaisyUI integration.
+- [x] Storybook for component development.
 - [ ] Component stubs for all components.
 
 ## Setup

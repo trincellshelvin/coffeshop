@@ -1,0 +1,21 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;d700display=swap');
+@import url('https://fonts.google.com/specimen/Montserrat+Subrayada?query=Raleway');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* src/styles/index.css */
+.hero-title {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 2.5rem;
+    color: #f9f6f6;
+    /* Customize your color */
+}
+
+.hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #666;
+    /* Customize further as needed */
+}

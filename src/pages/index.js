@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import  { HeroSectionWithButton } from './components/HeroSection';
 
+
 const CallToActionSection = ({ handleClick }) => (
   <section className="cta-button relative flex items-center justify-center min-h-screen">
     <video src="/fallingcoffeebeans.mp4" loop autoPlay muted className="absolute w-full h-full object-cover top-0 left-0"></video>
