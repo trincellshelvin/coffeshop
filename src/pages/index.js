@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Navbar from './components/Navbar';
+import { HomeNavbar } from './components/Navbar';
 import Footer from './components/Footer';
 import { HeroSectionWithButton } from './components/HeroSection';
 import Loading from './components/Loader'; // Ensure correct path to Loader
@@ -23,7 +23,7 @@ export default function Home() {
       <Loading isLoading={isLoading} />
       {!isLoading && (
         <>
-          <Navbar />
+          <HomeNavbar />
           <HeroSectionWithButton buttonLabel={"Signup Now"} handleCtaClick={handleCtaClick} />
           <footer className="footer relative z-10 bg-white text-chocolate-brown text-center py-4">
             <Footer />

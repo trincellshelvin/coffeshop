@@ -3,7 +3,7 @@ import PageHeader from './components/PageHeader'; // Ensure correct path
 import CartItem from './components/CartItem'; // Ensure correct path
 import products from '../mocks/cart.json'; // Ensure correct path
 import Button from './components/Button'; // Ensure correct path
-import Navbar from './components/Navbar'; // Ensure correct path
+import { CartNavbar } from './components/Navbar'; // Ensure correct path
 
 const CartPage = () => {
     function handleRemoveFromCart(productId) {
@@ -16,7 +16,7 @@ const CartPage = () => {
 
     return (
         <div className="cart-page">
-            <Navbar />
+            <CartNavbar />
             <PageHeader pageTitle="Shopping Cart" />
             <div className="cart-items">
                 {products.map((product) => (

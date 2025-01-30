@@ -1,7 +1,7 @@
 // src/pages/signup.jsx
 import { useRouter } from 'next/router';
 import SignupForm from './components/SignupForm';
-import Navbar from './components/Navbar';
+import { SignupNavbar } from './components/Navbar';
 import Footer from './components/Footer';
 
 export default function Signup() {
@@ -12,7 +12,7 @@ export default function Signup() {
     }
     return (
         <div>
-            <Navbar />
+            <SignupNavbar />
             <SignupForm buttonLabel="Sign Up" handleSignup={() => console.log('Sign up clicked!')} />
             <Footer />
         </div>
