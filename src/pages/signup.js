@@ -4,7 +4,7 @@ import SignupForm from './components/SignupForm';
 import { SignupNavbar } from './components/Navbar';
 import Footer from './components/Footer';
 
-export default function Signup() {
+const Signup =() =>{
     const router = useRouter();
     function handleSignup() {
         alert('Sign up clicked!');
@@ -18,3 +18,5 @@ export default function Signup() {
         </div>
     );
 }
+
+export default Signup;

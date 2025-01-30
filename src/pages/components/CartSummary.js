@@ -7,13 +7,19 @@ const CartSummary = ({ title }) => {
 
     useEffect(() => {
         getCartItems().then(items => {
-            console.log('Cart Items:', items);
+            console.log('Cart Items:', items); // Log cart items
             setCartItems(items);
         });
     }, []);
 
     const calculateTotal = () => {
-        return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2);
+        const total = cartItems.reduce((total, item) => {
+            const price = typeof item.price === 'number' ? item.price : parseFloat(item.price);
+            console.log(`Calculating: ${item.name} - Price: ${price}, Quantity: ${item.quantity}`);
+            return total + (price * item.quantity);
+        }, 0).toFixed(2);
+        console.log('Total:', total); // Log total price
+        return total;
     };
 
     return (

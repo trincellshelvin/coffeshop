@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import products from '../../mocks/products.json';
 import ProductCard from '../components/ProductCard'; // Correct import path and name
 
-export default function ProductPage() {
+const ProductPage = () => {
     const router = useRouter();
     const { id } = router.query;
     const product = products[id] || {};
@@ -19,3 +19,5 @@ export default function ProductPage() {
         </div>
     );
 }
+
+export default ProductPage;

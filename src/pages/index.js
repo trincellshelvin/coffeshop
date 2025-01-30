@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import { HeroSectionWithButton } from './components/HeroSection';
 import Loading from './components/Loader'; // Ensure correct path to Loader
 
-export default function Home() {
+const Home = () => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -34,3 +34,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

@@ -5,7 +5,7 @@ import 'tailwindcss/tailwind.css'; // Tailwind CSS import
 import 'next/font/google';
 
 
-export default function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return (
     <div data-theme="coffeeShop">
       
@@ -14,3 +14,4 @@ export default function MyApp({ Component, pageProps }) {
   );
 };
 
+export default MyApp;

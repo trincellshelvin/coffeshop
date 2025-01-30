@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FaCog } from 'react-icons/fa'; // Import Font Awesome Gear Icon
 import styles from './Loader.module.css'; // Import the CSS module
 
-export default function Loading({ isLoading }) {
+const Loading = ({ isLoading }) => {
     return (
         <div className={isLoading ? styles.loadingContainer : 'hidden'}>
             <FaCog className={styles.loadingGearIcon} />
@@ -13,3 +13,5 @@ export default function Loading({ isLoading }) {
 Loading.propTypes = {
     isLoading: PropTypes.bool.isRequired,
 };
+
+export default Loading;

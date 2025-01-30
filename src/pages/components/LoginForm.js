@@ -1,19 +1,19 @@
-// src/components/LoginForm.jsx
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-export default function SignupForm({ buttonLabel, handleSignup }) {
+const LoginForm = ({ buttonLabel, handleLogin }) => {
     return (
         <form className="form">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <Button label={buttonLabel} handleClick={handleSignup} />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <Button label={buttonLabel} handleClick={handleLogin} />
         </form>
     );
-}
+};
 
-SignupForm.propTypes = {
+LoginForm.propTypes = {
     buttonLabel: PropTypes.string.isRequired,
     handleLogin: PropTypes.func.isRequired,
 };
+
+export default LoginForm;

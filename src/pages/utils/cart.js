@@ -1,7 +1,7 @@
 import products from '../../mocks/products.json'; // Ensure correct path
 
 // Mock function to simulate fetching cart items
-export const getCartItems = () => {
+const getCartItems = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             // Example cart quantities (you may fetch these from an API or state)
@@ -15,6 +15,7 @@ export const getCartItems = () => {
             const detailedCartItems = cartItems.map(cartItem => {
                 const product = products.find(p => p._id === cartItem.id) || {};
                 console.log('Product:', product); // Log product details
+                const price = typeof product.price === 'number' ? product.price : parseFloat(product.price);
                 return {
                     ...product,
                     quantity: cartItem.quantity,
@@ -27,3 +28,5 @@ export const getCartItems = () => {
         }, 1000); // Simulate network delay
     });
 };
+
+export default getCartItems;
