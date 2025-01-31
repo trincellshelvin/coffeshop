@@ -23,6 +23,9 @@ const HomeNavbar = () => {
                     <Link href="/" className="hover:underline flex items-center space-x-1">
                         <FaHome /> <span>Home</span>
                     </Link>
+                    <Link href="/products" className="hover:underline flex items-center space-x-1">
+                        <FaBoxOpen /> <span>Products</span>
+                    </Link>
                     <Link href="/checkout" className="hover:underline flex items-center space-x-1">
                         <FaBoxOpen /> <span>Checkout</span>
                     </Link>
@@ -64,8 +67,14 @@ const SignupNavbar = () => {
                     <span className="text-chocolate-brown text-2xl font-semibold">Steampunk Cyber Cafe</span>
                 </Link>
                 <div className="flex space-x-6 text-chocolate-brown items-center">
-                    <Link href="/signup" className="hover:underline flex items-center space-x-1">
-                        <FaUser /> <span>Signup</span>
+                    <Link href="/" className="hover:underline flex items-center space-x-1">
+                        <FaHome /> <span>Home</span>
+                    </Link>
+                    <Link href="/products" className="hover:underline flex items-center space-x-1">
+                        <FaBoxOpen /> <span>Products</span>
+                    </Link>
+                    <Link href="/login" className="hover:underline flex items-center space-x-1">
+                        <FaUser /> <span>Login</span>
                     </Link>
                     <Link href="/cart" className="hover:underline relative flex items-center space-x-1">
                         <FaShoppingCart />
@@ -99,8 +108,17 @@ const LoginNavbar = () => {
                     <span className="text-chocolate-brown text-2xl font-semibold">Steampunk Cyber Cafe</span>
                 </Link>
                 <div className="flex space-x-6 text-chocolate-brown items-center">
+                <Link href="/" className="hover:underline flex items-center space-x-1">
+                        <FaHome /> <span>Home</span>
+                    </Link>
+                    <Link href="/products" className="hover:underline flex items-center space-x-1">
+                        <FaBoxOpen /> <span>Products</span>
+                    </Link>
                     <Link href="/login" className="hover:underline flex items-center space-x-1">
                         <FaSignInAlt /> <span>Login</span>
+                    </Link>
+                    <Link href="/signup" className="hover:underline flex items-center space-x-1">
+                        <FaUser /> <span>Signup</span>
                     </Link>
                     <Link href="/cart" className="hover:underline relative flex items-center space-x-1">
                         <FaShoppingCart />
@@ -127,13 +145,13 @@ const CartNavbar = () => {
     }, []);
 
     return (
-        <nav className="relative z-10 bg-opacity-75 bg-white py-4 shadow-lg">
-            <div className="max-w-7xl mx-auto flex justify-between items-center px-5">
+        <nav className="relative z-10 bg-opacity-75 bg-white py-4 shadow-lg w-full">
+            <div className="flex justify-between items-center px-5 md:px-10 w-full">
                 <Link href="/" className="flex items-center space-x-2">
                     <img src="/steampunkcybercafelogo.jpg" alt="Steampunk Cyber Cafe" className="logo w-10 h-10" />
                     <span className="text-chocolate-brown text-2xl font-semibold">Steampunk Cyber Cafe</span>
                 </Link>
-                <div className="flex space-x-6 text-chocolate-brown items-center">
+                <div className="flex space-x-6 text-chocolate-brown items-center ml-auto">
                     <Link href="/" className="hover:underline flex items-center space-x-1">
                         <FaHome /> <span>Home</span>
                     </Link>
@@ -183,6 +201,9 @@ const CheckoutNavbar = () => {
                     </Link>
                     <Link href="/checkout" className="hover:underline flex items-center space-x-1">
                         <FaBoxOpen /> <span>Checkout</span>
+                    </Link>
+                    <Link href="/products" className="hover:underline flex items-center space-x-1">
+                        <FaBoxOpen /> <span>Products</span>
                     </Link>
                     <Link href="/signup" className="hover:underline flex items-center space-x-1">
                         <FaUser /> <span>Signup</span>

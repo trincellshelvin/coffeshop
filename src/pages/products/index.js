@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PageHeader from '../components/PageHeader'; 
 import ProductCard from '../components/ProductCard'; 
 import productsData from '../../mocks/products.json'; 
-import Navbar from '../components/Navbar'; 
+import { HomeNavbar } from '../components/Navbar'; 
 import Footer from '../components/Footer'; 
 
 
@@ -30,7 +30,7 @@ const ProductsPage = () => {
 
     return (
         <div>
-            <Navbar />
+            <HomeNavbar />
             <PageHeader pageTitle="Our Products" />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {products.map((product) => (

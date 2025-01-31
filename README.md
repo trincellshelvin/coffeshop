@@ -57,7 +57,7 @@ If you would like to contribute to this project, please follow these steps:
 ![ShoppingCart](https://res.cloudinary.com/dgls7u3iq/video/upload/v1738021654/CoffeeShopFrontEndTestScreenShots/Screen_Recording_2025-01-27_174712_ghb1tk.mp4)
 ![Signup](https://res.cloudinary.com/dgls7u3iq/image/upload/v1738021966/CoffeeShopFrontEndTestScreenShots/Screenshot_2025-01-27_175221_omqthv.png)
 ![Login](https://res.cloudinary.com/dgls7u3iq/video/upload/v1738021895/CoffeeShopFrontEndTestScreenShots/Screen_Recording_2025-01-27_175110_c1shta.mp4)
-![ProductPage]()
+![ProductPage](https://res.cloudinary.com/dgls7u3iq/image/upload/v1738290855/CoffeeShopFrontEndTestScreenShots/Screenshot_2025-01-30_203309_vbzxxn.png)
 ![Checkout](https://res.cloudinary.com/dgls7u3iq/image/upload/v1738212076/CoffeeShopFrontEndTestScreenShots/Screenshot_2025-01-29_224043_c4dmpj.png)
 
 
