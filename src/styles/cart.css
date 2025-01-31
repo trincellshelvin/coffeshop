@@ -1,0 +1,32 @@
+.cart-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* Adjust gap as needed */
+    padding: 20px;
+    /* Adjust padding as needed */
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Adjust gap between items */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* Example styling */
+    border-radius: 5px;
+    /* Example styling */
+}
+
+.checkout-button {
+    margin-top: 20px;
+    /* Adjust margin as needed */
+}

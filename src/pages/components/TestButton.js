@@ -1,3 +1,5 @@
-export default function TestButton() {
+const TestButton = () => {
     return <button className="btn btn-primary">Test DaisyUI</button>;
 }
+
+export default TestButton;

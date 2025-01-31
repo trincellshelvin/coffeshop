@@ -26,8 +26,8 @@ Live link: https://coffeshop-iota.vercel.app/
 - [x] CartSummary
 
 ## Features
-- [ ] Tailwind CSS with DaisyUI integration.
-- [ ] Storybook for component development.
+- [x] Tailwind CSS with DaisyUI integration.
+- [x] Storybook for component development.
 - [ ] Component stubs for all components.
 
 ## Setup
@@ -53,6 +53,13 @@ If you would like to contribute to this project, please follow these steps:
 
 ![Completed Setup](https://res.cloudinary.com/dgls7u3iq/image/upload/v1736220495/CoffeeShopBackendTestsScreenshots/CoffeeShopFrontEndCapstone/Screenshot_2025-01-06_185702_lrpzvz.png)
 ![StoryBook Interface](https://res.cloudinary.com/dgls7u3iq/image/upload/v1736220495/CoffeeShopBackendTestsScreenshots/CoffeeShopFrontEndCapstone/Screenshot_2025-01-06_212518_qgbycz.png)
+![HomePage](https://res.cloudinary.com/dgls7u3iq/video/upload/v1738021507/CoffeeShopFrontEndTestScreenShots/Screen_Recording_2025-01-27_174434_y9amao.mp4)
+![ShoppingCart](https://res.cloudinary.com/dgls7u3iq/video/upload/v1738021654/CoffeeShopFrontEndTestScreenShots/Screen_Recording_2025-01-27_174712_ghb1tk.mp4)
+![Signup](https://res.cloudinary.com/dgls7u3iq/image/upload/v1738021966/CoffeeShopFrontEndTestScreenShots/Screenshot_2025-01-27_175221_omqthv.png)
+![Login](https://res.cloudinary.com/dgls7u3iq/video/upload/v1738021895/CoffeeShopFrontEndTestScreenShots/Screen_Recording_2025-01-27_175110_c1shta.mp4)
+![ProductPage](https://res.cloudinary.com/dgls7u3iq/image/upload/v1738290855/CoffeeShopFrontEndTestScreenShots/Screenshot_2025-01-30_203309_vbzxxn.png)
+![Checkout](https://res.cloudinary.com/dgls7u3iq/image/upload/v1738212076/CoffeeShopFrontEndTestScreenShots/Screenshot_2025-01-29_224043_c4dmpj.png)
+
 
 ## Attribution
 

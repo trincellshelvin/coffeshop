@@ -1,12 +1,17 @@
-// /pages/_app.js
-import '../styles/globals.css';
-import Navbar from './components/Navbar'; // Import the Navbar component
+import '../styles/globals.css'; 
+import '../styles/cart.css';
+import '../styles/index.css';
+import 'tailwindcss/tailwind.css'; // Tailwind CSS import
+import 'next/font/google';
 
-export default function MyApp({ Component, pageProps }) {
+
+const MyApp = ({ Component, pageProps }) => {
   return (
     <div data-theme="coffeeShop">
-      <Navbar /> {/* Include the Navbar component */}
+      
       <Component {...pageProps} />
     </div>
   );
 };
+
+export default MyApp;
