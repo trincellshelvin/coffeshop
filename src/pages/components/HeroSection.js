@@ -18,7 +18,7 @@ const HeroSection = () => (
                 </h1>
             </header>
             <section className="description">
-                <p className={`${styles.heroSubtitle} text-xl text-white`}>Experience the best coffee in town with freshly brewed beans and a variety of delicious pastries.</p>
+                <p className={`${styles.heroSubtitle} text-xl text-white`}>Experience the best hot beverages, small eats in town with freshly brewed beans or tea and a variety of delicious pastries.</p>
             </section>
         </div>
     </section>
