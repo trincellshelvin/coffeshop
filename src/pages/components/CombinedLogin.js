@@ -9,12 +9,6 @@ const CombinedLogin = () => {
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            // Safe to use document here
-        }
-    }, []);
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
