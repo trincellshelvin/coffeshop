@@ -1,17 +1,27 @@
-import React from 'react';
-import PageHeader from './components/PageHeader'; // Ensure correct path
-import CartItem from './components/CartItem'; // Ensure correct path
-import products from '../mocks/cart.json'; // Ensure correct path
-import Button from './components/Button'; // Ensure correct path
-import { CartNavbar } from './components/Navbar'; // Ensure correct path
+import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom'; // Use useNavigate instead of useHistory
+import { AuthContext } from './context/AuthContext';
+import PageHeader from './components/PageHeader'; 
+import CartItem from './components/CartItem'; 
+import products from '../mocks/cart.json'; 
+import Button from './components/Button'; 
+import { CartNavbar } from './components/Navbar'; 
 
 const CartPage = () => {
     function handleRemoveFromCart(productId) {
         console.log('Remove from Cart clicked!', productId);
     }
 
+    const { isAuthenticated } = useContext(AuthContext);
+    const navigate = useNavigate(); // Use useNavigate instead of useHistory
+
     function handleCheckout() {
         console.log('Checkout clicked!');
+        if (!isAuthenticated) {
+            alert('You need to Login or Signup to proceed to checkout.');
+        } else {
+            navigate('/checkout');
+        }
     }
 
     return (
