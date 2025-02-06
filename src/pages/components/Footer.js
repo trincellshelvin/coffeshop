@@ -1,10 +1,17 @@
-// components/Footer.js
+// src/pages/components/Footer.js
+import React from 'react';
 import PropTypes from 'prop-types';
+
 const Footer = ({ title }) => {
-    return <div className="footer"><p className="text-center">© 2025 Coffee Shop. All rights reserved.</p> {title}</div>;
-}
+    return (
+        <footer>
+            <h1>{title}</h1>
+            <p className="text-center">© 2025 Coffee Shop. All rights reserved.</p>
+        </footer>
+    );
+};
+
 Footer.propTypes = {
-    // Add prop-types here
     title: PropTypes.string.isRequired,
 };
 

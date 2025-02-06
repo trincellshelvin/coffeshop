@@ -5,7 +5,6 @@ import PageHeader from './components/PageHeader';
 import CartItem from './components/CartItem'; 
 import products from '../mocks/cart.json'; 
 import Button from './components/Button'; 
-import { CartNavbar } from './components/Navbar'; 
 
 const CartPage = () => {
     function handleRemoveFromCart(productId) {
@@ -26,7 +25,6 @@ const CartPage = () => {
 
     return (
         <div className="cart-page">
-            <CartNavbar />
             <PageHeader pageTitle="Shopping Cart" />
             <div className="cart-items">
                 {products.map((product) => (

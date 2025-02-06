@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import PageHeader from '../components/PageHeader'; 
 import ProductCard from '../components/ProductCard'; 
 import productsData from '../../mocks/products.json'; 
-import { HomeNavbar } from '../components/Navbar'; 
 import Footer from '../components/Footer'; 
+import { HomeNavbar } from '../components/Navbar';
 
 
 const ProductsPage = () => {

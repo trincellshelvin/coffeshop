@@ -1,9 +1,9 @@
 import '../styles/globals.css'; 
 import '../styles/cart.css';
-import '../styles/index.css';
 import 'tailwindcss/tailwind.css'; 
 import { AuthProvider } from './context/AuthContext'; // Adjust the path accordingly
 import dynamic from 'next/dynamic';
+import { useRouter } from 'next/router';
 
 // Import BrowserRouter dynamically to disable SSR
 const BrowserRouter = dynamic(() => import('react-router-dom').then(mod => mod.BrowserRouter), { ssr: false });
@@ -19,15 +19,31 @@ const CombinedLogin = dynamic(() => import('./components/CombinedLogin'), { ssr:
 const AppRoutes = dynamic(() => import('../routes/AppRoutes'), { ssr: false });
 
 const MyApp = ({ Component, pageProps }) => {
+  const router = useRouter();
+
+  // Function to render the correct Navbar
+  const renderNavbar = () => {
+    switch (router.pathname) {
+      case '/':
+        return <HomeNavbar />;
+      case '/signup':
+        return <SignupNavbar />;
+      case '/login':
+        return <LoginNavbar />;
+      case '/cart':
+        return <CartNavbar />;
+      case '/checkout':
+        return <CheckoutNavbar />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <AuthProvider>
       <BrowserRouter>
         <div data-theme="coffeeShop">
-          <HomeNavbar /> 
-          <SignupNavbar />
-          <LoginNavbar />
-          <CartNavbar/>
-          <CheckoutNavbar />
+          {renderNavbar()} {/* Render the appropriate Navbar based on the route */}
           <AppRoutes />
           <Component {...pageProps} />
           <CombinedLogin />

@@ -2,13 +2,11 @@ import React from 'react';
 import CheckoutForm from './components/CheckoutForm'; // Ensure correct path
 import Footer from './components/Footer'; // Ensure correct path
 import PageHeader from './components/PageHeader'; // Ensure correct path
-import { CheckoutNavbar } from './components/Navbar'; // Ensure correct path
 import CartSummary from './components/CartSummary';
 
 const Checkout = ({ handleBuyNow }) => {
     return (
         <div data-theme="coffeeShop" className="text-chocolate-brown min-h-screen flex flex-col justify-between">
-            <CheckoutNavbar />
             <PageHeader
                 logo="/steampunkcybercafelogo.jpg"
                 businessName="Steam Punk Cyber Cafe"
