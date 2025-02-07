@@ -52,5 +52,5 @@ const MyApp = ({ Component, pageProps }) => {
     </AuthProvider>
   );
 };
-
+    
 export default MyApp;
