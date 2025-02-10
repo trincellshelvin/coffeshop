@@ -1,7 +1,7 @@
 // src/pages/signup.js
 import { useRouter } from 'next/router';
-import SignupForm from './components/SignupForm';
-import Footer from './components/Footer';
+import SignupForm from '../components/SignupForm';
+import Footer from '../components/Footer';
 
 const Signup =() =>{
     const router = useRouter();

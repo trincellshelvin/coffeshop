@@ -1,8 +1,8 @@
 import React from 'react';
-import CheckoutForm from './components/CheckoutForm'; // Ensure correct path
-import Footer from './components/Footer'; // Ensure correct path
-import PageHeader from './components/PageHeader'; // Ensure correct path
-import CartSummary from './components/CartSummary';
+import CheckoutForm from '../components/CheckoutForm'; // Ensure correct path
+import Footer from '../components/Footer'; // Ensure correct path
+import PageHeader from '../components/PageHeader'; // Ensure correct path
+import CartSummary from '../components/CartSummary';
 
 const Checkout = ({ handleBuyNow }) => {
     return (

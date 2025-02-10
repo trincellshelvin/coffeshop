@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import { useNavigate } from 'react-router-dom'; // Use useNavigate instead of useHistory
-import { AuthContext } from './context/AuthContext';
-import PageHeader from './components/PageHeader'; 
-import CartItem from './components/CartItem'; 
-import products from '../mocks/cart.json'; 
-import Button from './components/Button'; 
+import { useRouter } from 'next/router';
+import { AuthContext } from '../context/AuthContext';
+import PageHeader from '../components/PageHeader'; 
+import CartItem from '../components/CartItem'; 
+import products from '../mocks/products.json'; 
+import Button from '../components/Button'; 
 
 const CartPage = () => {
     function handleRemoveFromCart(productId) {
@@ -12,7 +12,7 @@ const CartPage = () => {
     }
 
     const { isAuthenticated } = useContext(AuthContext);
-    const navigate = useNavigate(); // Use useNavigate instead of useHistory
+    const router = useRouter(); // Use useNavigate instead of useHistory
 
     function handleCheckout() {
         console.log('Checkout clicked!');
