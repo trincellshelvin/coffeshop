@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import Footer from './components/Footer';
-import { HeroSectionWithButton } from './components/HeroSection';
-import Loading from './components/Loader'; // Ensure correct path to Loader
+import Footer from '../components/Footer';
+import { HeroSectionWithButton } from '../components/HeroSection';
+import Loading from '../components/Loader'; // Ensure correct path to Loader
 
 const Home = () => {
   const router = useRouter();

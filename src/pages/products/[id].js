@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import products from '../../mocks/products.json';
-import ProductCard from '../components/ProductCard'; // Correct import path and name
+import ProductCard from '../../components/ProductCard'; // Correct import path and name
 
 const ProductPage = () => {
     const router = useRouter();

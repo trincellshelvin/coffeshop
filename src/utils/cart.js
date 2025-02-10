@@ -1,4 +1,4 @@
-import products from '../../mocks/products.json'; // Ensure correct path
+import products from '../mocks/products.json'; // Ensure correct path
 
 // Mock function to simulate fetching cart items
 const getCartItems = () => {

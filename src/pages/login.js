@@ -1,8 +1,8 @@
 // LoginPage.js
 import React from 'react';
 import PropTypes from 'prop-types'; 
-import Footer from './components/Footer'; 
-import CombinedLogin from './components/CombinedLogin'; 
+import Footer from '../components/Footer'; 
+import CombinedLogin from '../components/CombinedLogin'; 
 
 const LoginPage = () => {
     return (
