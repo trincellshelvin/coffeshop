@@ -9,11 +9,11 @@ import { useRouter } from 'next/router';
 //const BrowserRouter = dynamic(() => import('react-router-dom').then(mod => mod.BrowserRouter), { ssr: false });
 
 // Import Navbar components dynamically to disable SSR
-const HomeNavbar = dynamic(() => import('../components/Navbar').then(mod => mod.HomeNavbar), { ssr: false });
-const SignupNavbar = dynamic(() => import('../components/Navbar').then(mod => mod.SignupNavbar), { ssr: false });
-const LoginNavbar = dynamic(() => import('../components/Navbar').then(mod => mod.LoginNavbar), { ssr: false });
-const CartNavbar = dynamic(() => import('../components/Navbar').then(mod => mod.CartNavbar), { ssr: false });
-const CheckoutNavbar = dynamic(() => import('../components/Navbar').then(mod => mod.CheckoutNavbar), { ssr: false });
+//const HomeNavbar = dynamic(() => import('../components/Navbar').then(mod => mod.HomeNavbar), { ssr: false });
+//const SignupNavbar = dynamic(() => import('../components/Navbar').then(mod => mod.SignupNavbar), { ssr: false });
+//const LoginNavbar = dynamic(() => import('../components/Navbar').then(mod => mod.LoginNavbar), { ssr: false });
+//const CartNavbar = dynamic(() => import('../components/Navbar').then(mod => mod.CartNavbar), { ssr: false });
+//const CheckoutNavbar = dynamic(() => import('../components/Navbar').then(mod => mod.CheckoutNavbar), { ssr: false });
 
 // const CombinedLogin = dynamic(() => import('./components/CombinedLogin'), { ssr: false });
 // const AppRoutes = dynamic(() => import('../routes/AppRoutes'), { ssr: false });
@@ -22,22 +22,22 @@ const MyApp = ({ Component, pageProps }) => {
   const router = useRouter();
 
   // Function to render the correct Navbar
-  const renderNavbar = () => {
-    switch (router.pathname) {
-      case '/':
-        return <HomeNavbar />;
-      case '/signup':
-        return <SignupNavbar />;
-      case '/login':
-        return <LoginNavbar />;
-      case '/cart':
-        return <CartNavbar />;
-      case '/checkout':
-        return <CheckoutNavbar />;
-      default:
-        return null;
-    }
-  };
+  // const renderNavbar = () => {
+  //   switch (router.pathname) {
+  //     case '/':
+  //       return <HomeNavbar />;
+  //     case '/signup':
+  //       return <SignupNavbar />;
+  //     case '/login':
+  //       return <LoginNavbar />;
+  //     case '/cart':
+  //       return <CartNavbar />;
+  //     case '/checkout':
+  //       return <CheckoutNavbar />;
+  //     default:
+  //       return null;
+  //   }
+  // };
 
   return (
     <AuthProvider>
