@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 
 // Import BrowserRouter dynamically to disable SSR
-const BrowserRouter = dynamic(() => import('react-router-dom').then(mod => mod.BrowserRouter), { ssr: false });
+//const BrowserRouter = dynamic(() => import('react-router-dom').then(mod => mod.BrowserRouter), { ssr: false });
 
 // Import Navbar components dynamically to disable SSR
 const HomeNavbar = dynamic(() => import('../components/Navbar').then(mod => mod.HomeNavbar), { ssr: false });
