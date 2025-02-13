@@ -2,9 +2,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import ProtectedRoute from '../components/ProtectedRoute';
-import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage';
-import DashboardPage from './pages/DashboardPage';
+import HomePage from '../pages/index';
+import LoginPage from '../pages/login';
+import DashboardPage from '../pages/DashboardPage';
 
 const AppRoutes = () => (
     <Routes>
