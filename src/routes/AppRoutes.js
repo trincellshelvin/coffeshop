@@ -1,6 +1,6 @@
 // // src/AppRoutes.js
 // import React from 'react';
-// import { Routes, Route } from 'react-router-dom';
+// import { useRouter } from 'next/router';
 // import ProtectedRoute from '../components/ProtectedRoute';
 // import HomePage from '../pages/index';
 // import LoginPage from '../pages/login';
